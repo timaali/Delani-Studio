@@ -1,0 +1,9 @@
+.background_images {
+
+    background-image: url(../img/backgrounds/h_img.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1260;
+    height: 600;
+
+}
