@@ -42,6 +42,23 @@
                 text-align: center;
                 color: aliceblue;
             }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .column {
+                float: left;
+                width: 30%;
+                padding: 20px 90px 90px 220px;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                align-items: center;
+            }
         </style>
 
 
@@ -59,10 +76,32 @@
             The we help translate them into effective solutions.</p>
 
         <div id="background_image2">
-            <p id="text1">Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product visipn</p>
+            <p id="text1">Before we sign a contract or write a line of code our team will spend the necessary time
+                needed to understand your product visipn</p>
             <p id="text1">The outcome of this scoping session is proposal or high-level statement of work</p>
             <p id="text1">Based on your requirements, we can provide a complete offering or just the pieces you need</p>
         </div>
+
+        <div>
+            <h1>WHAT WE DO</h1>
+
+            <div class="row">
+                <div class="column">
+                    <img src="../img/services_icons/design_icon.png" alt="DESIGN" style="width: 100;">
+                </div>
+
+                <div class="column">
+                    <img src="../img/services_icons/dev_icon.png" alt="DEVELOPMENT" style="width: 100;">
+                </div>
+
+                <div class="column">
+                    <img src="../img/services_icons/product_icon.png" alt="PROJECT MANAGEMENT" style="width: 100;">
+                </div>
+
+            </div>
+        </div>
+
+
 
 
 
