@@ -82,15 +82,47 @@
         width: 100%;
     }
 
-    .portfolio {
-        display: flex;
-        justify-content: center;
+    
+
+    .portfoliosection {
+        position: relative;
+        /*padding-left: 10% !important;
+        padding-right: 10% !important;
+        justify-items: center; 
+        display: inline-block; */
+        
+
+
     }
 
-    .portfolio1 {
-        display: flex;
-        justify-content: center;
+    .portfolio {
+       display: flex;
+        justify-content: space-evenly;
+    
+        /*padding-left: 10%;
+        padding-right: 10%; */
+
     }
+
+
+
+    .portfolio_image {
+        position: relative;
+       /* margin-left: 2%; */
+        
+        
+
+
+    }
+
+    .images {
+        margin: 10px;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+
 
 
     .socialicons {
@@ -126,6 +158,7 @@
         opacity: 1;
         transition: .5s ease;
         background-color: white;
+        text-align: center;
     }
 
 
@@ -160,12 +193,12 @@
     .text {
         color: black;
         font-size: 20px;
-        position: absolute;
+        /*  position: absolute;
         top: 10%;
         left: 10%;
         -webkit-transform: translate(-10%, -10%);
         -ms-transform: translate(-10%, -10%);
-        transform: translate(-10%, -10%);
+        transform: translate(-10%, -10%); */
         text-align: center;
     }
 
@@ -287,19 +320,105 @@
                 <h1 style="padding:5% 5% 2% 5%;">PORTFOLIO</h1>
 
                 <div class="portfolio">
+                    <div class="portfolio_image" id="image1_div">
+                        <img src="../img/portfolio/work4.jpg" class="images" id="image1">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image1_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                BlackBox Project
+                            </div>
 
-                    <img src="../img/portfolio/work4.jpg" style="margin:10px;" width="150" height="150" id="image1">
-                    <img src="../img/portfolio/work3.jpg" style="margin:10px;" width="150" height="150" id="image2">
-                    <img src="../img/portfolio/work2.jpg" style="margin:10px;" width="150" height="150" id="image3">
-                    <img src="../img/portfolio/work1.jpg" style="margin:10px;" width="150" height="150" id="image4">
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image2_div">
+                        <img src="../img/portfolio/work3.jpg" class="images" id="image2">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image2_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Ontario Project
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image3_div">
+                        <img src="../img/portfolio/work2.jpg" class="images" id="image3">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image3_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                OrangeBox Project
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image4_div">
+                        <img src="../img/portfolio/work1.jpg" class="images" id="image4">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image4_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Android Project
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="portfolio1">
+                <div class="portfolio">
 
-                    <img src="../img/portfolio/work5.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work6.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work7.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work8.jpg" style="margin:10px;" width="150" height="150">
+                    <div class="portfolio_image" id="image5_div">
+                        <img src="../img/portfolio/work5.jpg" class="images" id="image5">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image5_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Holiday Project
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image6_div">
+                        <img src="../img/portfolio/work6.jpg" class="images" id="image6">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image6_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Radio Project
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image7_div">
+                        <img src="../img/portfolio/work7.jpg" class="images" id="image7">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image7_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Burned Project
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio_image" id="image8_div">
+                        <img src="../img/portfolio/work8.jpg" class="images" id="image8">
+                        <div class="overlay"
+                            style="opacity: 0 !important; display: block; text-align: center !important;"
+                            id="image8_overlay">
+                            <div class="text" style="padding:35% 25%">
+                                Giraffe Restaurant
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -356,6 +475,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script>
 
     $("#comments_form").keypress(function (event) {
@@ -399,20 +519,78 @@
         }
     };
 
-    $("#project_management_link").click(function(event){
+    $("#project_management_link").click(function (event) {
         console.log("clicked");
-        change_state(id1 = "project_management", id2="project_management_overlay");
+        change_state(id1 = "project_management", id2 = "project_management_overlay");
     });
 
-    $("#development_link").click(function(event){
+    $("#development_link").click(function (event) {
         console.log("clicked");
         change_state(id1 = 'development', id2 = 'development_overlay');
     });
 
-    $("#design_link").click(function(event){
+    $("#design_link").click(function (event) {
         console.log("clicked");
         change_state(id1 = 'design', id2 = 'design_overlay');
     });
+
+    /* $("#image1_div").hover(function (event) {
+         $("image1").css("opacity", "0.3")
+         $("image1_overlay").css("opacity", "1")
+         console.log(hover);
+     });*/
+
+    /*$("#portfolio").on("hover", "image1_div", function(event){
+        var image = document.getElementById("image1")
+        console.log(image)
+    }); */
+    function hover_show(id1, id2) {
+        var image = document.getElementById(id1)
+        image.style.opacity = 0.5
+        var overlay = document.getElementById(id2)
+        overlay.style.opacity = 0.5
+
+    }
+
+    function hover_return(id1, id2) {
+        var image = document.getElementById(id1)
+        image.style.opacity = 1
+        var overlay = document.getElementById(id2)
+        overlay.style.opacity = 0
+    }
+
+    $("#image1_div").hover(function () { hover_show(id1 = "image1", id2 = "image1_overlay") },
+        function () { hover_return(id1 = "image1", id2 = "image1_overlay") });
+
+    $("#image2_div").hover(function () { hover_show(id1 = "image2", id2 = "image2_overlay") },
+        function () { hover_return(id1 = "image2", id2 = "image2_overlay") });
+
+    $("#image3_div").hover(function () { hover_show(id1 = "image3", id2 = "image3_overlay") },
+        function () { hover_return(id1 = "image3", id2 = "image3_overlay") });
+
+    $("#image4_div").hover(function () { hover_show(id1 = "image4", id2 = "image4_overlay") },
+        function () { hover_return(id1 = "image4", id2 = "image4_overlay") });
+
+    $("#image5_div").hover(function () { hover_show(id1 = "image5", id2 = "image5_overlay") },
+        function () { hover_return(id1 = "image5", id2 = "image5_overlay") });
+
+    $("#image6_div").hover(function () { hover_show(id1 = "image6", id2 = "image6_overlay") },
+        function () { hover_return(id1 = "image6", id2 = "image6_overlay") });
+
+    $("#image7_div").hover(function () { hover_show(id1 = "image7", id2 = "image7_overlay") },
+        function () { hover_return(id1 = "image7", id2 = "image7_overlay") });
+
+    $("#image8_div").hover(function () { hover_show(id1 = "image8", id2 = "image8_overlay") },
+        function () { hover_return(id1 = "image8", id2 = "image8_overlay") });
+
+
+
+
+
+
+
+
+
 
 </script>
 
