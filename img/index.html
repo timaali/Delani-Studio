@@ -232,7 +232,7 @@
 
 
             <ul>
-                <li onclick="change_state('design', 'design_overlay')">
+                <li id="design_link">
                     <div class="image" id="design">
                         <img src="../img/services_icons/design_icon.png" alt="DESIGN">
                         <p>DESIGN</p>
@@ -250,7 +250,7 @@
                 </li>
 
 
-                <li onclick="change_state('development', 'development_overlay')">
+                <li id="development_link">
                     <div class="image" id="development">
                         <img src="../img/services_icons/dev_icon.png" alt="DEVELOPMENT">
                         <p>DEVELOPMENT</p>
@@ -263,7 +263,7 @@
 
                 </li>
 
-                <li onclick="change_state('project_management', 'project_management_overlay')">
+                <li id="project_management_link">
                     <div class="image" id="project_management">
                         <img src="../img/services_icons/product_icon.png" alt="PROJECT MANAGEMENT" style="width: 100;">
                         <p>PROJECT MANAGEMENT</p>
@@ -341,21 +341,6 @@
             <h2>DELANI STUDIO</h2>
             <h2>2019</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 
@@ -413,6 +398,10 @@
             element1.style.display = "none"
         }
     }
+
+    $("#project_management_link").click(change_state(id1 = "project_management", id2 = "project_management_overlay"));
+    $("#development_link").click(change_state(id1 = 'development', id2 = 'development_overlay'));
+    $("#design_link").click(change_state(id1 = 'design', id2 = 'design_overlay'));
 
 </script>
 
