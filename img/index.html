@@ -288,10 +288,10 @@
 
                 <div class="portfolio">
 
-                    <img src="../img/portfolio/work4.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work3.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work2.jpg" style="margin:10px;" width="150" height="150">
-                    <img src="../img/portfolio/work1.jpg" style="margin:10px;" width="150" height="150">
+                    <img src="../img/portfolio/work4.jpg" style="margin:10px;" width="150" height="150" id="image1">
+                    <img src="../img/portfolio/work3.jpg" style="margin:10px;" width="150" height="150" id="image2">
+                    <img src="../img/portfolio/work2.jpg" style="margin:10px;" width="150" height="150" id="image3">
+                    <img src="../img/portfolio/work1.jpg" style="margin:10px;" width="150" height="150" id="image4">
                 </div>
 
                 <div class="portfolio1">
@@ -397,11 +397,22 @@
             element2.style.display = "block";
             element1.style.display = "none"
         }
-    }
+    };
 
-    $("#project_management_link").click(change_state(id1 = "project_management", id2 = "project_management_overlay"));
-    $("#development_link").click(change_state(id1 = 'development', id2 = 'development_overlay'));
-    $("#design_link").click(change_state(id1 = 'design', id2 = 'design_overlay'));
+    $("#project_management_link").click(function(event){
+        console.log("clicked");
+        change_state(id1 = "project_management", id2="project_management_overlay");
+    });
+
+    $("#development_link").click(function(event){
+        console.log("clicked");
+        change_state(id1 = 'development', id2 = 'development_overlay');
+    });
+
+    $("#design_link").click(function(event){
+        console.log("clicked");
+        change_state(id1 = 'design', id2 = 'design_overlay');
+    });
 
 </script>
 
