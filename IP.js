@@ -49,21 +49,11 @@ $("#design_link").click(function (event) {
   change_state(id1 = 'design', id2 = 'design_overlay');
 });
 
-/* $("#image1_div").hover(function (event) {
-     $("image1").css("opacity", "0.3")
-     $("image1_overlay").css("opacity", "1")
-     console.log(hover);
- });*/
-
-/*$("#portfolio").on("hover", "image1_div", function(event){
-    var image = document.getElementById("image1")
-    console.log(image)
-}); */
 function hover_show(id1, id2) {
   var image = document.getElementById(id1)
-  image.style.opacity = 0.5
+  image.style.opacity = 0
   var overlay = document.getElementById(id2)
-  overlay.style.opacity = 0.5
+  overlay.style.opacity = 1
 
 }
 
