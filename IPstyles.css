@@ -221,6 +221,7 @@ span {
     display: flex;
     position: relative;
     vertical-align: bottom;
+    display: inline-block;
 }
 
 #logo {
