@@ -1,4 +1,4 @@
-## WEEK3 IP ##
+## DELANI STUDIO IP ##
 #### **PROJECT NAME:**
 __DELANI STUDIO__
 
