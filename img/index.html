@@ -41,7 +41,8 @@
 
     p {
         text-align: center;
-    }
+        font-family:Arial, Helvetica, sans-serif;
+        }
 
     h1 {
         text-align: center;
@@ -82,7 +83,7 @@
         width: 100%;
     }
 
-    
+
 
     .portfoliosection {
         position: relative;
@@ -90,15 +91,15 @@
         padding-right: 10% !important;
         justify-items: center; 
         display: inline-block; */
-        
+
 
 
     }
 
     .portfolio {
-       display: flex;
+        display: flex;
         justify-content: space-evenly;
-    
+
         /*padding-left: 10%;
         padding-right: 10%; */
 
@@ -108,9 +109,9 @@
 
     .portfolio_image {
         position: relative;
-       /* margin-left: 2%; */
-        
-        
+        /* margin-left: 2%; */
+
+
 
 
     }
@@ -232,6 +233,19 @@
         /* overflow: hidden; */
 
     }
+
+    #mouseclick {
+        justify-content: center;
+        display: flex;
+        position: relative;
+    }
+
+    #logo {
+        justify-content: center;
+        display: flex;
+
+
+    }
 </style>
 
 
@@ -239,9 +253,15 @@
     <div class="container-fluid">
 
         <div id="background_image1">
+            <div id="logo">
+                <img src="../img/logo/logo.png" alt="logo">
+            </div>
             <h1 id="text1">WELCOME</h1>
             <h1 id="text1">TO DELANI STUDIO</h1>
             <p id="text1">AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
+            <div id="mouseclick">
+                <img src="../img/mouse_click.png" alt="mouseclick">
+            </div>
         </div>
 
         <h1>ABOUT US</h1>
@@ -251,6 +271,8 @@
         <p>We start each project by understanding your business goals, the user's needs and the product requirements.
             The we help translate them into effective solutions.</p>
 
+
+
         <div id="background_image2">
             <p id="text1">Before we sign a contract or write a line of code our team will spend the necessary time
                 needed to understand your product visipn</p>
@@ -259,7 +281,7 @@
         </div>
 
         <div>
-            <h1>WHAT WE DO</h1>
+            <h1 style="margin-top: 20px;">WHAT WE DO</h1>
 
             <div class="what we do"></div>
 
@@ -273,11 +295,10 @@
 
                     <div class="box overlay" id="design_overlay">
                         <p class="text" id="designtext">Our Design practice offers a full range of services including
-                            brand strategy, interaction and visual design and user experience testing. Throughout your
-                            project our
-                            designers create and implement visual designs and workflows, solicit user feedback and work
-                            with you
-                            to make sure what gets built is what is needed.</p>
+                            brand strategy, interaction and visual design and user experience testing. 
+                            
+                            <p class="text">Throughout your project our designers create and implement visual designs and workflows, solicit user feedback and work
+                            with you to make sure what gets built is what is needed.</p>
                     </div>
 
                 </li>
@@ -292,6 +313,7 @@
                     <div class="box overlay" id="development_overlay">
                         <p class="text">All engineers are fluent in the latest enterprise, mobile and web development
                             technologies</p>
+                        <p class="text">They collaborate with your team to write and improve code on a daily basis, using proven practices such as test-driven development and pair programming</p>
                     </div>
 
                 </li>
@@ -304,12 +326,8 @@
 
 
                     <div class="box overlay" id="project_management_overlay">
-                        <p class="text" id="designtext">Our Design practice offers a full range of services including
-                            brand strategy, interaction and visual design and user experience testing. Throughout your
-                            project our
-                            designers create and implement visual designs and workflows, solicit user feedback and work
-                            with you
-                            to make sure what gets built is what is needed.</p>
+                        <p class="text" id="designtext">Planning and development is iterative. Because we are constantly coding and testing, the products built are always ready to go live</p>
+                        <p class="text" id="designtext">This iterative process allows for changes as business requirements evolve</p>
                     </div>
                 </li>
 
@@ -423,8 +441,9 @@
 
             </div>
             <div class="message_form">
+                <h2 style="color: white; top: 2%;">CONTACT US</h2>
                 <form id="comments_form" method="post" onsubmit="submit_message">
-                    <div class="input-group" style="padding-left:5%; padding-bottom: 2%; padding-right: 10%;">
+                    <div class="input-group" style="padding-left:10%; padding-bottom: 2%; padding-right: 10%;">
 
                         <input class="form-control input-sm input" id="name" type="text" placeholder="Name...">
                         <span style="width:5% ;">
