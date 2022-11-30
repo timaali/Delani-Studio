@@ -26,4 +26,4 @@ To view the website click [Here](Timaali.com)
  
 #### **COPYRIGHT AND LICENSE INFORMATION:**
  This project is licensed using the MIT lincense.
- You can checkout the full license [here](https://github.com/timaali/Delani-Studio/blob/master/LICENSE)
+ You can checkout the full license [here](https://github.com/timaali/Delani-Studio/blob/master/LICENCE.md)
